@@ -32,5 +32,10 @@ class HomeController extends Controller {
 	{
 		return view('home');
 	}
+        
+	public function cases()
+	{
+		return view('home');
+	}        
 
 }

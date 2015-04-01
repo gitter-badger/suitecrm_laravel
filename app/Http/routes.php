@@ -13,6 +13,9 @@
 
 Route::get('/', 'HomeController@index');
 Route::get('welcome', 'WelcomeController@index');
+Route::get('cases', 'CasesController@index');
+Route::get('cases/read', 'CasesController@read');
+
 
 Route::get('home', 'HomeController@index');
 

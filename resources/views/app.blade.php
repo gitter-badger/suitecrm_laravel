@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Laravel</title>
 
-	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
-	<link href="{{ asset('/css/default.css') }}" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<link href="{{asset('css/default.css')}}" rel="stylesheet">
         
 
 	<!-- Fonts -->
@@ -21,8 +21,8 @@
 	<![endif]-->
 </head>
 <body>
-
-    <div class="container" style="padding-top: 10px; padding-bottom: 20px;">
+    <div class="wrapper">
+    <div class="container-fluid" style="padding-top: 10px; padding-bottom: 20px;">
     <img src="https://suitecrm.com/images/suite_icon.png" class="pull-left">
     <a href="{{ url('/auth/logout') }}" title="Log out" class="pull-right"><i class="fa fa-sign-out fa-2x"></i></a>
 </div>
@@ -30,53 +30,40 @@
   
 	<!-- top navbar -->
     <div class="navbar navbar-default" role="navigation">
-       <div class="container">
+       <div class="container-fluid">
     	<div class="navbar-header">
            <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
              <span class="icon-bar"></span>
              <span class="icon-bar"></span>
              <span class="icon-bar"></span>
            </button>
-            <a class="navbar-brand" href="#">Advanced Open Portal <small>Laravel fork</small></a>
+           <a class="navbar-brand" href="#">Advanced Open Portal</a>
     	</div>
        </div>
     </div>
       
-    <div class="container">
+    <div class="container-fluid">
       <div class="row row-offcanvas row-offcanvas-left">
-<div class="col-xs-6 col-sm-3" id="sidebar" role="navigation">
-                  
-        <div class='block block-size-normal highlight-color-red'>
-<div class='block-content-outer'>
-<div class='block-content-inner'>
+        
         <!-- sidebar -->
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Cases</a></li>
-              <li><a href="#">Contracts</a></li>
-              <li><a href="#">Invoices</a></li>              
+              <li class="active"><a href="{{ url('/') }}"><i class="fa fa-home"></i> Home</a></li>
+              <li><a href="{{ url('cases') }}"><i class="fa fa-support"></i> Cases</a></li>
+              <li><a href="{{ url('contracts')}}"><i class="fa fa-file"></i> Contracts</a></li>
+              <li><a href="{{ url('invoices')}}"><i class="fa fa-file-pdf-o"></i> Invoices</a></li>              
             </ul>
         </div>
-</div>
-</div>
-        </div>
-    
+  	
         <!-- main area -->
-        <div class="col-xs-12 col-sm-9">
+        <div class="col-xs-12 col-sm-9" style="padding-top: 20px;">
              @yield('content')
           </div><!--/row-->
         </div><!--/.col-xs-12.col-sm-9-->
 
-
       </div><!--/row-->
-
-
-
-      <footer>
-          <p class="text-center">&copy; Hermans Glenn</p>
-      </footer>
-
     </div><!--/.container-->
+    </div>
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
