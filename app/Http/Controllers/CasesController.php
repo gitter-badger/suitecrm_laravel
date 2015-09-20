@@ -20,7 +20,7 @@ class CasesController extends Controller {
 	 */
 	public function __construct()
 	{
-		$this->middleware('auth');
+//		$this->middleware('auth');
 	}
 
 	/**
@@ -32,10 +32,10 @@ class CasesController extends Controller {
 	{
 		return view('home');
 	}
-        
+
 	public function read()
 	{
 		return view('cases/view');
-	}        
+	}
 
 }

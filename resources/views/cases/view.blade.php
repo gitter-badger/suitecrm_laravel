@@ -1,5 +1,4 @@
 @extends('app')
-
 @section('content')
 <h2>Case - #5864452</h2>
 <div class="bottom case-header">
@@ -8,39 +7,33 @@
     <ul class="list-unstyled padding">
     <li class="row">
       <strong class="col-md-3">Case number</strong>
-      <div class="col-md-7">1</div>
+      <div class="col-md-7">5864452</div>
     </li>
     <li class="row">
       <strong class="col-md-3">Subject</strong>
       <div class="col-md-7">
-        [NL]Suggesties voor nieuwe functionaliteiten      
+        Waar kan ik een dns record wijzigen?
       </div>
     </li>
     <li class="row">
-       <strong class="col-md-3">
-        Date created      </strong>
-      <div class="col-md-7">3/31/15 2:04 AM</div>
+       <strong class="col-md-3">Date created</strong>
+      <div class="col-md-7">20/09/2015 2:04 AM</div>
     </li>
     <li class="row">
       <strong class="col-md-3">Last modified</strong>
-      <div class="col-md-7">
-        3/31/15 2:05 PM      </div>
+      <div class="col-md-7">20/09/2015 2:04 AM</div>
     </li>
-
     <li class="row">
       <strong class="col-md-3">Status</strong>
-      <div class="col-md-7">open</div>
+      <div class="col-md-7">Open</div>
     </li>
-        
-    
+
     <li class="row">
       <strong class="col-md-3">Contact</strong>
       <div class="col-md-7">Mr. Hermans Glenn</div>
     </li>
-
-
-      </ul>
-  </div> 
+   </ul>
+  </div>
   <div class="clearfix">
         <div class="pull-right">
             <a id="openall" class="btn-link">show all</a>
@@ -57,7 +50,7 @@
                 <span class="glyphicon glyphicon-envelope read">
         </span>
                 <strong class="author">SuiteCRM administrator</strong>
-        <span class="date">3/31/15 2:05 PM</span>
+        <span class="date">20/09/2015 2:04 AM</span>
       </a>
     </div>
   </div>
@@ -68,13 +61,8 @@
 <br />
 Bedankt voor uw mail.<br />
 <br />
-Het wijzigen van DNS records dient te geschieden door de klant zelfs via<br />
-het control panel.<br />
+Het wijzigen van DNS records dient te geschieden door de klant zelfs via het control panel.<br />
 
-Let op de Nameservers kunt niet zelfs wijzigen die worden op aanvraag<br />
-van u door ons gewijzigd.<br />
-<br />
-Hopende u voldoende te hebben geinformeerd.<br />
           </p>
 
        </div>
