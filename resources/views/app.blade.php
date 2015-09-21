@@ -50,8 +50,7 @@
             <ul class="nav">
               <li class="active"><a href="{{ url('/') }}"><i class="fa fa-home fa-lg"></i> Home</a></li>
               <li><a href="{{ url('cases') }}"><i class="fa fa-support fa-lg"></i> Cases</a></li>
-              <li><a href="{{ url('contracts')}}"><i class="fa fa-file fa-lg"></i> Contracts</a></li>
-              <li><a href="{{ url('invoices')}}"><i class="fa fa-file-pdf-o fa-lg"></i> Invoices</a></li>              
+              <li><a href="{{ url('quotes')}}"><i class="fa fa-file-pdf-o fa-lg"></i> Quotes</a></li>              
             </ul>
         </div>
   	
