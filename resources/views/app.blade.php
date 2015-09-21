@@ -37,7 +37,7 @@
              <span class="icon-bar"></span>
              <span class="icon-bar"></span>
            </button>
-           <a class="navbar-brand" href="#">Advanced Open Portal</a>
+           <a class="navbar-brand" href="{{ url('') }}">Advanced Open Portal</a>
     	</div>
        </div>
     </div>
@@ -48,10 +48,10 @@
         <!-- sidebar -->
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
             <ul class="nav">
-              <li class="active"><a href="{{ url('/') }}"><i class="fa fa-home"></i> Home</a></li>
-              <li><a href="{{ url('cases') }}"><i class="fa fa-support"></i> Cases</a></li>
-              <li><a href="{{ url('contracts')}}"><i class="fa fa-file"></i> Contracts</a></li>
-              <li><a href="{{ url('invoices')}}"><i class="fa fa-file-pdf-o"></i> Invoices</a></li>              
+              <li class="active"><a href="{{ url('/') }}"><i class="fa fa-home fa-lg"></i> Home</a></li>
+              <li><a href="{{ url('cases') }}"><i class="fa fa-support fa-lg"></i> Cases</a></li>
+              <li><a href="{{ url('contracts')}}"><i class="fa fa-file fa-lg"></i> Contracts</a></li>
+              <li><a href="{{ url('invoices')}}"><i class="fa fa-file-pdf-o fa-lg"></i> Invoices</a></li>              
             </ul>
         </div>
   	
