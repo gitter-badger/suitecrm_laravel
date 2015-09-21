@@ -33,6 +33,11 @@ class CasesController extends Controller {
 		return view('home');
 	}
 
+	public function create()
+	{
+		return view('cases/create');
+	}
+	
 	public function read()
 	{
 		return view('cases/view');
