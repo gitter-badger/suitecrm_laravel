@@ -291,8 +291,8 @@ font-weight: bold;
 .right-addon input { padding-right: 30px; }
 
 .btn-custom {
-  background-color: #c93232;
-  border-color: #c93232;
+  background-color: #9e0b3d;
+  border-color: #9e0b3d;
   color: #fff;
 }
 .btn-custom:hover,
@@ -322,12 +322,12 @@ fieldset[disabled] .btn-custom.active {
 }
 
 .navbar-default {
-  background-color: #c93232;
+  background-color: #9e0b3d;
   border-color: #ffff;
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#c93232), to(#c93232));
-  background-image: -webkit-linear-gradient(top, #c93232, 0%, #c93232, 100%);
-  background-image: -moz-linear-gradient(top, #c93232 0%, #c93232 100%);
-  background-image: linear-gradient(to bottom, #c93232 0%, #c93232 100%);
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#9e0b3d), to(#c93232));
+  background-image: -webkit-linear-gradient(top, #9e0b3d, 0%, #9e0b3d, 100%);
+  background-image: -moz-linear-gradient(top, #9e0b3d 0%, #9e0b3d 100%);
+  background-image: linear-gradient(to bottom, #9e0b3d 0%, #9e0b3d 100%);
   background-repeat: repeat-x;
   color: #ffffff;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd65858', endColorstr='#ffc93232', GradientType=0);

@@ -3,7 +3,27 @@
 <h2>Case - #5864452</h2>
 <div class="bottom case-header">
       <span class="pull-right">
-      <button class="btn btn-custom btn-sm">Close ticket</button></span>
+      <button type="button" data-toggle="modal" data-target="#CloseCase" data-backdrop="false"  class="btn btn-custom btn-sm">Close ticket</button>  
+      </span>
+      
+        <div class="modal" id="CloseCase" tabindex="-1" role="dialog" aria-labelledby="CloseCase">
+       <div class="modal-dialog" role="document">
+         <div class="modal-content">
+          <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+           <h4 class="modal-title" id="">Close case</h4>
+          </div>
+        <div class="modal-body">
+        Are you sure you want to close this case?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-custom"><?php echo Lang::get('aop.save');?></button>
+      </div>
+    </div>
+  </div>
+</div> 
+
     <ul class="list-unstyled padding">
     <li class="row">
       <strong class="col-md-3">Case number</strong>
@@ -36,11 +56,11 @@
   </div>
   <div class="clearfix">
         <div class="pull-right">
-            <a id="openall" class="btn-link">show all</a>
-            <a id="closeall" class="btn-link">hide all</a>
+<button id="expandAll" href="#" class="btn btn-custom btn-sm" role="button">Expand All</button>
+<button id="collapseAll" href="#" class="btn btn-custom btn-sm" role="button">Collapse All</button>
         </div>
     </div>
-    <div id="accordion" class="panel-group case-items">
+<div id="accordion" class="panel-group case-items">
   <div class="panel panel-default">
   <div class="panel-heading tocustomer">
     <div class="panel-title">
@@ -70,6 +90,46 @@ Het wijzigen van DNS records dient te geschieden door de klant zelfs via het con
           </div>
   </div>
 </div>
-    </div>        
-   
+    </div>          
+    
+<script type="text/javascript">
+$(function () {			
+                    $('a[data-toggle="collapse"]').on('click',function(){
+				
+				var objectID=$(this).attr('href');
+				
+				if($(objectID).hasClass('in'))
+				{
+                                    $(objectID).collapse('hide');
+				}
+				
+				else{
+                                    $(objectID).collapse('show');
+				}
+                    });
+                    
+                    
+                    $('#expandAll').on('click',function(){
+                        
+                        $('a[data-toggle="collapse"]').each(function(){
+                            var objectID=$(this).attr('href');
+                            if($(objectID).hasClass('in')===false)
+                            {
+                                 $(objectID).collapse('show');
+                            }
+                        });
+                    });
+                    
+                    $('#collapseAll').on('click',function(){
+                        
+                        $('a[data-toggle="collapse"]').each(function(){
+                            var objectID=$(this).attr('href');
+                            $(objectID).collapse('hide');
+                        });
+                    });
+                    
+		});
+
+$('#CloseCase').appendTo("body")		
+</script>   
 @endsection
