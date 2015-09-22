@@ -28,7 +28,7 @@ return [
 	| SuiteCRM user credentials
 	|--------------------------------------------------------------------------
 	|
-	| This URL is used to make a connection to the crm
+	| These credentials are used to authenticate the portal to the crm
 	|
 	*/
 
