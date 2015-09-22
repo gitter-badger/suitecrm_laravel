@@ -4,7 +4,7 @@ return [
 
 	/*
 	|--------------------------------------------------------------------------
-	| Password Reminder Language Lines
+	| Advanced Open Portal Language Lines
 	|--------------------------------------------------------------------------
 	|
 	| The following language lines are the default lines for the portal
