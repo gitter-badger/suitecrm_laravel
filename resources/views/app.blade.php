@@ -8,24 +8,22 @@
 
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 	<link href="{{asset('css/default.css')}}" rel="stylesheet">
-        
 
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+   <!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
 <body>
     <div class="wrapper">
-    <div class="container-fluid" style="padding-top: 10px; padding-bottom: 20px;">
-    <img src="https://suitecrm.com/images/suite_icon.png" class="pull-left">
-    <a href="{{ url('/auth/logout') }}" title="Log out" class="pull-right"><i class="fa fa-sign-out fa-2x"></i></a>
-</div>
+     <div class="container-fluid" style="padding-top: 10px; padding-bottom: 20px;">
+      <img src="https://suitecrm.com/images/suite_icon.png" class="pull-left">
+       <a href="{{ url('/auth/logout') }}" title="Log out" class="pull-right" data-toggle="tooltip" data-placement="bottom" data-html="true" title="1st line of text <br> 2nd line of text"	><i class="fa fa-sign-out fa-2x"></i></a>
+     </div>
+     
  <div class="page-container">
   
 	<!-- top navbar -->
@@ -37,7 +35,7 @@
              <span class="icon-bar"></span>
              <span class="icon-bar"></span>
            </button>
-           <a class="navbar-brand" href="{{ url('') }}">Advanced Open Portal</a>
+           <a class="navbar-brand" href="{{ url('') }}" ><?php echo Lang::get('aop.portal_name');?></a>
     	</div>
        </div>
     </div>
@@ -48,9 +46,9 @@
         <!-- sidebar -->
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
             <ul class="nav">
-              <li class="active"><a href="{{ url('/') }}"><i class="fa fa-home fa-lg"></i> Home</a></li>
-              <li><a href="{{ url('cases') }}"><i class="fa fa-support fa-lg"></i> Cases</a></li>
-              <li><a href="{{ url('quotes')}}"><i class="fa fa-file-pdf-o fa-lg"></i> Quotes</a></li>              
+              <li class="active"><a href="{{ url('/') }}"><i class="fa fa-home fa-lg"></i> <?php echo Lang::get('aop.home'); ?></a></li>
+              <li><a href="{{ url('cases') }}"><i class="fa fa-support fa-lg"></i> <?php echo Lang::get('aop.cases'); ?></a></li>
+              <li><a href="{{ url('quotes')}}"><i class="fa fa-file-pdf-o fa-lg"></i> <?php echo Lang::get('aop.quotes'); ?></a></li>              
             </ul>
         </div>
   	
@@ -66,5 +64,8 @@
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	$("[data-toggle=tooltip]").tooltip();
+	</script>
 </body>
 </html>

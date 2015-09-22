@@ -21,8 +21,8 @@
             <option value="closed">Closed</option>            
         </select>
     </div>  
-    <button type="submit" class="btn btn-custom ">Search</button>
-    <a href="{{url('cases/create')}}" class="btn btn-success"><i class="fa fa-plus"></i> Create case</a>
+    <button type="submit" class="btn btn-custom "><?php echo Lang::get('aop.search');?></button>
+    <button type="button" class="btn btn-custom" onclick="location.href='cases/create';">Create case</button>
 </form>
 </div>
 </div>
@@ -35,10 +35,10 @@
 <table class="table table-striped">
  <thead>
   <tr>
-   <th class="col-md-2">Case number</th>  
-   <th class="col-md-2">Type</th>
-   <th>Subject</th>  
-   <th class="col-md-2">Status</th>  
+   <th class="col-md-1"><?php echo Lang::get('aop.case_number');?></th>  
+   <th class="col-md-2"><?php echo Lang::get('aop.case_type');?></th>
+   <th class="col-md-7"><?php echo Lang::get('aop.case_subject');?></th>  
+   <th class="col-md-2"><?php echo Lang::get('aop.case_status');?></th>  
   </tr>
  </thead>   
   <tbody>
