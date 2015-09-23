@@ -1,6 +1,6 @@
 @extends('app')
 @section('content')
-<h2>Case - #5864452</h2>
+<div class="page-header"><h2>Case - #5864452</h2></div>
 <div class="bottom case-header">
       <span class="pull-right">
       <button type="button" data-toggle="modal" data-target="#CloseCase" data-backdrop="false"  class="btn btn-custom btn-sm">Close ticket</button>  
