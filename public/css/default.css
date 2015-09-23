@@ -1,4 +1,7 @@
-body { background-color: #f1f1f1;}                    
+html, body {
+  height: 100%;
+}
+body {height: 100%;  background-color: #f1f1f1;}                    
 h1,
 h2,
 h3,
@@ -59,7 +62,8 @@ font-family: Verdana, Arial, Helvetica, sans-serif;
 font-weight: bold;
 }
 
-.wrapper{max-width:1280px; min-height:950px; margin:0 auto;background-color:#fff}
+.wrapper{max-width:1280px; min-height:100%; margin:0 auto; background-color:#fff}
+.page-header{padding-bottom:9px;margin:1px 0 21px;border-bottom:1px solid #cccccc}
 
 /* ERROR & LOGIN & LOCKSCREEN*/
 .middle-box {
@@ -332,8 +336,9 @@ fieldset[disabled] .btn-custom.active {
   color: #ffffff;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd65858', endColorstr='#ffc93232', GradientType=0);
 }
+
 .navbar-default .navbar-brand {
-  color: #ffffff;
+  color: #ffffff; 
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
