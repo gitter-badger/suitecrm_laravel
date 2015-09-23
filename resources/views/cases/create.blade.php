@@ -1,7 +1,7 @@
 @extends('app')
 @section('content')
-<form class="">
-
+<div class="page-header"><h2><?php echo Lang::get('aop.create_case');?></h2> </div>
+<form action="" method="post" class="">
  <div class="form-group">
   <label for="case_type" class="form-label"><?php echo Lang::get('aop.case_type');?></label>
   <select name="case_type" id="case_type" class="form-control">
