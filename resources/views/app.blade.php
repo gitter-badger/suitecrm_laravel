@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Laravel</title>
+	<title>Laravel SuiteCRM Advanced Open Portal</title>
 
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
@@ -24,9 +24,10 @@
     <div class="wrapper">
      <div class="container-fluid" style="padding-top: 10px; padding-bottom: 20px;">
       <img src="https://suitecrm.com/images/suite_icon.png" class="pull-left">
-       <a href="{{ url('/auth/logout') }}" title="Log out" class="pull-right" data-toggle="tooltip" data-placement="bottom" data-html="true" title="1st line of text <br> 2nd line of text"	><i class="fa fa-sign-out fa-2x"></i></a>
+<div class="pull-right">       
+       <a href="{{ url('/auth/logout') }}" title="Log out"  data-toggle="tooltip" data-placement="bottom" data-html="true" title="1st line of text <br> 2nd line of text"	><i class="fa fa-sign-out fa-2x"></i></a>
      </div>
-     
+     </div>
  <div class="page-container">
   
 	<!-- top navbar -->
@@ -40,6 +41,40 @@
            </button>
            <a class="navbar-brand" href="{{ url('') }}" ><?php echo Lang::get('aop.portal_name');?></a>
     	</div>
+       
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="col-sm-offset-3">
+    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+         <li class="active"><a href="{{ url('/') }}"><i class="fa fa-home fa-lg"></i></a></li>
+         <li><a href="{{ url('meetings') }}">Meetings</a></li>
+         <li><a href="{{ url('quotes')}}"><?php echo Lang::get('aop.quotes'); ?></a></li> 
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo Lang::get('aop.cases'); ?> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Open</a></li>
+            <li><a href="#">Closed</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="{{ url('cases/create') }}"><?php echo Lang::get('aop.create_case'); ?></a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="{{ url('/auth/logout') }}" title="Log out"><i class="fa fa-sign-out"></i> Sign out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+        </div>   
        </div>
     </div>
       
