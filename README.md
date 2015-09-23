@@ -1,5 +1,5 @@
 # suitecrm_laravel
-Advanced Open Portal integrated in Laravel 5
+Advanced Open Portal integrated in Laravel 5 (original Joomla component https://github.com/salesagility/SuiteCRM-Portal-Joomla)
 
 # Requirements
 PHP >= 5.4
