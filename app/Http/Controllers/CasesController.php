@@ -30,7 +30,7 @@ class CasesController extends Controller {
 	 */
 	public function index()
 	{
-		return view('home');
+		return view('cases/list');
 	}
 
 	public function create()
