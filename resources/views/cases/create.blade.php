@@ -1,7 +1,7 @@
 @extends('app')
 @section('content')
 <div class="page-header"><h2><?php echo Lang::get('aop.create_case');?></h2> </div>
-<form action="" method="post" class="">
+<form action="" method="post" class="well well-sm">
  <div class="form-group">
   <label for="case_type" class="form-label"><?php echo Lang::get('aop.case_type');?></label>
   <select name="case_type" id="case_type" class="form-control">
@@ -25,7 +25,7 @@
   </div>
  
   <div class="form-group">
-   <button type="submit" name="case_submit" class="btn btn-custom"><?php echo Lang::get('aop.create_case');?></button>
+   <button type="submit" name="case_submit" class="btn btn-custom"><?php echo Lang::get('aop.save');?></button>
  </div>
 </form>
 

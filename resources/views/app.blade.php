@@ -52,9 +52,9 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo Lang::get('aop.cases'); ?> <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">All</a></li>
-            <li><a href="#">Open</a></li>
-            <li><a href="#">Closed</a></li>
+            <li><a href="#"><?php echo Lang::get('aop.case_status_all');?></a></li>
+            <li><a href="#"><?php echo Lang::get('aop.case_status_open');?></a></li>
+            <li><a href="#"><?php echo Lang::get('aop.case_status_closed');?></a></li>
             <li role="separator" class="divider"></li>
             <li><a href="{{ url('cases/create') }}"><?php echo Lang::get('aop.create_case'); ?></a></li>
           </ul>
@@ -65,11 +65,10 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="#">My account</a></li>
+            <li><a href="#">Change password</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="{{ url('/auth/logout') }}" title="Log out"><i class="fa fa-sign-out"></i> Sign out</a></li>
+            <li><a href="{{ url('/auth/logout') }}" title="Log out"><i class="fa fa-sign-out"></i> <?php echo Lang::get('aop.sign_out'); ?></a></li>
           </ul>
         </li>
       </ul>
