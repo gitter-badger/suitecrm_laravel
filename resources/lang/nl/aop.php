@@ -16,12 +16,19 @@ return [
 	"no_portal_account" => "Deze gebruiker heeft geen toegang tot de portal",
 	"portal_user_blocked" => "Deze portal gebruiker is uitgeschakeld",	
 	"sign_out" => "Afmelden",
+	"sign_in" => "Aanmelden",	
+	
 	"email" => "E-mailadres",		
-	"password" => "Wachtwoord",							
+	"password" => "Wachtwoord",	
+	"forgot_password" => "Wachtwoord vergeten?",	
 
 	"home" => "Home",	
 	"cases" => "Dossiers",
+   "meetings" => 'Vergaderingen',	
 	"quotes" => "Offertes",				
+
+   "my_account" => 'Mijn account',	
+   "change_oassword" => 'Wachtwoord wijzigen',	   
 
 	"create_case" => "Nieuw dossier",
 	"list_cases" => "Dossiers",	

@@ -16,12 +16,19 @@ return [
 	"no_portal_account" => "This account does not have portal access",
 	"portal_user_blocked" => "This portal account has been disabled",	
 	"sign_out" => "Sign out",	
+	"sign_in" => "Sign in",	
+	"forgot_password" => "Forgot password?",	
+	
 	"email" => "E-mail address",		
 	"password" => "Password",		
 
 	"home" => "Home",	
 	"cases" => "Cases",
-	"quotes" => "Quotes",				
+   "meetings" => 'Meetings',
+	"quotes" => "Quotes",
+	
+   "my_account" => 'Mijn account',	
+   "change_password" => 'Wachtwoord wijzigen',			
 
 	"create_case" => "Create a new case",
 	"list_cases" => "List cases",	

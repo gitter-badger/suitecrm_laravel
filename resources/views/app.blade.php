@@ -47,14 +47,14 @@
     <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
          <li class="active"><a href="{{ url('/') }}"><i class="fa fa-home fa-lg"></i></a></li>
-         <li><a href="{{ url('meetings') }}">Meetings</a></li>
+         <li><a href="{{ url('meetings') }}"> <?php echo Lang::get('aop.meetings');?></a></li>
          <li><a href="{{ url('quotes')}}"><?php echo Lang::get('aop.quotes'); ?></a></li> 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo Lang::get('aop.cases'); ?> <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#"><?php echo Lang::get('aop.case_status_all');?></a></li>
-            <li><a href="#"><?php echo Lang::get('aop.case_status_open');?></a></li>
-            <li><a href="#"><?php echo Lang::get('aop.case_status_closed');?></a></li>
+            <li><a href="{{ url('cases') }}"><?php echo Lang::get('aop.case_status_all');?></a></li>
+            <li><a href="{{ url('cases') }}"><?php echo Lang::get('aop.case_status_open');?></a></li>
+            <li><a href="{{ url('cases') }}"><?php echo Lang::get('aop.case_status_closed');?></a></li>
             <li role="separator" class="divider"></li>
             <li><a href="{{ url('cases/create') }}"><?php echo Lang::get('aop.create_case'); ?></a></li>
           </ul>
@@ -65,8 +65,8 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">My account</a></li>
-            <li><a href="#">Change password</a></li>
+            <li><a href="#"><?php echo Lang::get('aop.my_account');?></a></li>
+            <li><a href="#"><?php echo Lang::get('aop.change_password'); ?></a></li>
             <li role="separator" class="divider"></li>
             <li><a href="{{ url('/auth/logout') }}" title="Log out"><i class="fa fa-sign-out"></i> <?php echo Lang::get('aop.sign_out'); ?></a></li>
           </ul>

@@ -40,10 +40,10 @@
                         </div>
                             <div class="clearfix">&nbsp;</div>
                                 
-                        <button type="submit" class="btn btn-custom">Login</button>
+                        <button type="submit" class="btn btn-custom"><?php echo Lang::get('aop.sign_in'); ?></button>
 
                         <a href="{{ url('/password/email') }}">
-                            <small>Forgot password?</small>
+                            <small><?php echo Lang::get('aop.forgot_password'); ?></small>
                         </a>
                     </form>
                     
