@@ -29,13 +29,13 @@
                         <div class="form-group">
                          <div class="inner-addon left-addon">
                             <i class="glyphicon glyphicon-envelope"></i>
-                            <input type="email" name="email" class="form-control" placeholder="Email address" value="{{ old('email') }}" required="">
+                            <input type="email" name="email" class="form-control" placeholder="<?php echo Lang::get('aop.email'); ?>" value="{{ old('email') }}" required="">
                         </div>
                         </div>
                         <div class="form-group">
                           <div class="inner-addon left-addon">
                             <i class="glyphicon glyphicon-lock"></i>                            
-                            <input type="password"  name="password" class="form-control" placeholder="Password" required="">
+                            <input type="password"  name="password" class="form-control" placeholder="<?php echo Lang::get('aop.password'); ?>" required="">
                         </div>
                         </div>
                             <div class="clearfix">&nbsp;</div>

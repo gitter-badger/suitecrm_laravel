@@ -15,7 +15,9 @@ return [
 	"login_required" => "U dient aangemeld te zijn om gebruik te kunnen maken van de portal",
 	"no_portal_account" => "Deze gebruiker heeft geen toegang tot de portal",
 	"portal_user_blocked" => "Deze portal gebruiker is uitgeschakeld",	
-	"sign_out" => "Afmelden",		
+	"sign_out" => "Afmelden",
+	"email" => "E-mailadres",		
+	"password" => "Wachtwoord",							
 
 	"home" => "Home",	
 	"cases" => "Dossiers",

@@ -15,7 +15,9 @@ return [
 	"login_required" => "You must be logged in to use the portal",
 	"no_portal_account" => "This account does not have portal access",
 	"portal_user_blocked" => "This portal account has been disabled",	
-	"sign_out" => "Sign out",		
+	"sign_out" => "Sign out",	
+	"email" => "E-mail address",		
+	"password" => "Password",		
 
 	"home" => "Home",	
 	"cases" => "Cases",
