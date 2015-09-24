@@ -15,6 +15,7 @@ return [
 	"login_required" => "You must be logged in to use the portal",
 	"no_portal_account" => "This account does not have portal access",
 	"portal_user_blocked" => "This portal account has been disabled",	
+	"sign_out" => "Sign out",		
 
 	"home" => "Home",	
 	"cases" => "Cases",
@@ -44,14 +45,14 @@ return [
 	"case_update_said" => "Said",	
 	"case_update_placeholder" => "Reply here",	
 	"case_update_send_reply" => "Send reply",
-   "case_update_sending" => "Sending",	
+   "case_update_sending" => "Sending",
    
    "save" => "Save",
    "close" => "Close", 
    "reopen" => "Reopen", 
    "case_created_by" => "Contact",                   
    "case_raised" => "Date created",			
-   "case_raised_on" => "Raised on",
+   "case_raised_on" => "Date created",
    "own_cases" => "My cases",
    "search" => "Search",      
    
