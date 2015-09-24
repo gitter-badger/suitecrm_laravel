@@ -14,7 +14,7 @@
                 
             </div>
 		<div class="container">
-<div class='loginColumns block block-size-login highlight-color-red'>
+<div class='loginColumns block block-size-login highlight-color-purple'>
 <div class='block-content-outer'>
 <div class='block-content-inner'>
         <div class="row">
@@ -55,6 +55,5 @@
     </div>
 </div>
 </div>
-</div>                    
-</div>
+
 @endsection
