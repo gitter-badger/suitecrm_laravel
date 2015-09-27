@@ -16,6 +16,12 @@ composer update
 ```
 
 ```
+composer update
+```
+
+
+
+```
 php artisan migrate
 ```
 
